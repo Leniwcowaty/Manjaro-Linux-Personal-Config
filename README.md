@@ -11,6 +11,9 @@ Then run terminal with Alt+Enter, change directory to Manjaro-Linux-Personal-Con
 Enjoy your i3!
 
 Themes credits (also here you can download latest versions):
+
 GTK Theme Simply Circles: https://www.gnome-look.org/p/1308970/
+
 Icon Theme Simply Circles Icons: https://www.gnome-look.org/p/1277095/
+
 Cursor Fossa Cursors: https://www.gnome-look.org/p/1377483/
