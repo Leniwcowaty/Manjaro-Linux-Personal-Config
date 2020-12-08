@@ -13,7 +13,7 @@ cd ./ConfigFiles
 
 echo "Downloading git and base-devel"
 
-sudo pacman -S base-devel git
+sudo pacman -S base-devel
 
 sudo git clone https://aur.archlinux.org/yay-git.git
 sudo chown -R $user:$user ./yay-git
