@@ -28,12 +28,18 @@ case "$decision" in
       echo "Win + Shift + H - open I3 user guide"
       echo "Win + Shift + X - lock your screen"
       echo "Win + Shift + Delete - shutdown now"
-      echo "Win + Space - rofi (app manager)";;
+      echo "Win + Space - rofi (app manager)"
+      echo "It's best to reboot your computer, or at least log out and back in (Win + Shift + E)";;
   "Y")
       echo "Win + Shift + H - open I3 user guide"
       echo "Win + Shift + X - lock your screen"
       echo "Win + Shift + Delete - shutdown now"
-      echo "Win + Space - rofi (app manager)";;
+      echo "Win + Space - rofi (app manager)"
+      echo "It's best to reboot your computer, or at least log out and back in (Win + Shift + E)";;
    *)
       echo "Enjoy your i3!"
+      echo "It's best to reboot your computer, or at least log out and back in (Win + Shift + E)"
 esac
+
+echo "exec_always feh --no-startup-id --bg-scale \"/home/$user/$pictures/wallpaper.png\"" >> /home/$user/.config/i3/config
+echo "bindsym $mod+Shift+x exec i3lock --image \"/home/$user/$pictures/lock_screen.png\"" >> /home/$user/.config/i3/config
