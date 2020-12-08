@@ -225,7 +225,5 @@ bindsym XF86AudioPrev exec playerctl previous
 # Varius controlls
 bindsym XF86Search exec "rofi -combi-modi drun,window,ssh -show combi -modi combi"
 
-bindsym $mod+Shift+x exec i3lock --image "/home/orlow/Obrazy/lock_screen.png"
 bindsym $mod+Shift+h exec "google-chrome https://i3wm.org/docs/userguide.html"
 bindsym $mod+Shift+Delete exec "shutdown now"
-exec_always feh --no-startup-id --bg-scale /home/orlow/Obrazy/wallpaper.png
