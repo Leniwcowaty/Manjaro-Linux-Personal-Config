@@ -3,6 +3,7 @@
 # Notice - you can't run this script as superuser (sudo)
 # You will be prompted about sudo password when the time comes
 
+echo "Input your user name"
 read user
 
 echo "Creating configuration folder in $user home directory"
