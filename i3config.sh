@@ -19,9 +19,9 @@ cp ./i3config/wallpaper.png /home/$user/$pictures/wallpaper.png
 cp ./i3config/lock_screen.png /home/$user/$pictures/lock_screen.png
 
 unzip themes.zip
-cp ./themes/FossaCursors /usr/share/icons
-cp ./themes/Simply-White-Circles /usr/share/icons
-cp ./themes/Simply_Circles_Dark_Envolved /usr/share/themes
+cp -r ./themes/FossaCursors /usr/share/icons
+cp -r ./themes/Simply-White-Circles /usr/share/icons
+cp -r ./themes/Simply_Circles_Dark_Envolved /usr/share/themes
 
 echo "Done. Your Mod key is Win key. Restart your i3 session with Alt+Shift+R"
 echo "Do you want to see most important custom shortcuts? [Y/N]"
@@ -62,4 +62,5 @@ case "$decision2" in
    *)
 esac
 
+echo "Deleting leftovers"
 sudo rm -R /home/$user/Manjaro-Linux-Personal-Config
