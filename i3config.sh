@@ -13,3 +13,14 @@ cp ./i3config/wallpaper.png /home/$user/$pictures/wallpaper.png
 cp ./i3config/lock_screen.png /home/$user/$pictures/lock_screen.png
 
 echo "Done. Your Mod key is Win key. Restart your i3 session with Win+Shift+R"
+echo "Do you want to see most important custom shortcuts? [Y/N]"
+
+read decision
+
+if [ $decision=="y" || $decision=="Y" ]
+then
+echo "Win + Shift + H - open I3 user guide"
+echo "Win + Shift + X - lock your screen"
+echo "Win + Shift + Delete - shutdown now"
+echo "Win + Space - rofi (app manager)"
+fi
