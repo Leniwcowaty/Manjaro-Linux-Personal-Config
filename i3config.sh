@@ -63,4 +63,5 @@ case "$decision2" in
 esac
 
 echo "Deleting leftovers"
+cd /home/$user
 sudo rm -R /home/$user/Manjaro-Linux-Personal-Config
