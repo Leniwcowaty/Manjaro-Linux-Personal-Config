@@ -49,4 +49,17 @@ esac
 echo "exec_always feh --no-startup-id --bg-scale \"/home/$user/$pictures/wallpaper.png\"" >> /home/$user/.config/i3/config
 echo "bindsym \$mod+Shift+x exec i3lock --image \"/home/$user/$pictures/lock_screen.png\"" >> /home/$user/.config/i3/config
 
+echo "Also FossaCursors, Simply-White-Circles and Simply_Circles_Dark_Envolved were installed."
+echo "Do you want to open lxappearance to change your theme, icons and cursors? [Y/N]"
+
+read decision2
+
+case "$decision2" in
+  "y")
+      sudo lxappearance;;
+  "Y")
+      sudo lxappearance;;
+   *)
+esac
+
 sudo rm -R /home/$user/Manjaro-Linux-Personal-Config
