@@ -29,3 +29,4 @@ echo "Installing I3 and necessary applications"
 yay -S i3 rofi vim dmenu arandr feh xbacklight
 
 echo "Done, reboot now, log into I3 window manager and run i3config.sh"
+echo "After logging into I3 DO NOT autocreate config file (press Esc on pop-up window)"
