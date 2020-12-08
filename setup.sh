@@ -31,3 +31,5 @@ yay -S i3 rofi vim dmenu arandr feh xorg-xbacklight google-chrome vlc spotify mc
 
 echo "Done, reboot now, log into I3 window manager and run i3config.sh"
 echo "After logging into I3 DO NOT autocreate config file (press Esc on pop-up window)"
+
+sudo rm -R /home/$user/ConfigFiles
