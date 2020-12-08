@@ -1,9 +1,9 @@
 #!/bin/bash
 # Script for configuration of Manjaro Linux Gnome edition with I3 Window Manager
 # Notice - you can't run this script as superuser (sudo)
-# But several times you will be prompted about sudo password
+# You will be prompted about sudo password when the time comes
 
-user="orlow"
+read user
 
 echo "Creating configuration folder in $user home directory"
 
