@@ -7,6 +7,8 @@ pictures="Obrazy" # if you are using different name for /home/Pictures
 
 echo "Copying configuration files and wallpapers"
 
+mkdir /home/$user/.config/i3status
+
 cp ./i3config/i3config /home/$user/.config/i3/config
 cp ./i3config/i3statusconfig /home/$user/.config/i3status/config
 cp ./i3config/wallpaper.png /home/$user/$pictures/wallpaper.png
