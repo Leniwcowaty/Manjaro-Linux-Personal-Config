@@ -42,4 +42,4 @@ case "$decision" in
 esac
 
 echo "exec_always feh --no-startup-id --bg-scale \"/home/$user/$pictures/wallpaper.png\"" >> /home/$user/.config/i3/config
-echo "bindsym $mod+Shift+x exec i3lock --image \"/home/$user/$pictures/lock_screen.png\"" >> /home/$user/.config/i3/config
+echo "bindsym \$mod+Shift+x exec i3lock --image \"/home/$user/$pictures/lock_screen.png\"" >> /home/$user/.config/i3/config
