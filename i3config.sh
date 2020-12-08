@@ -18,6 +18,9 @@ cp ./i3config/i3statusconfig /home/$user/.config/i3status/config
 cp ./i3config/wallpaper.png /home/$user/$pictures/wallpaper.png
 cp ./i3config/lock_screen.png /home/$user/$pictures/lock_screen.png
 
+sudo mkdir -p /etc/X11/xorg.conf.d
+sudo cp -r ./i3config/touchpad /etc/X11/xorg.conf.d/90-touchpad.conf
+
 unzip themes.zip
 sudo cp -r ./themes/FossaCursors /usr/share/icons
 sudo cp -r ./themes/Simply-White-Circles /usr/share/icons
