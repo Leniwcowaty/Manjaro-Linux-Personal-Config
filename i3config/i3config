@@ -114,7 +114,7 @@ set $ws4 "4: Settings"
 set $ws5 "5: Workspace"
 set $ws6 "6: Workspace"
 set $ws7 "7: Workspace"
-set $ws8 "8: Workspace"
+set $ws8 "8: Thunderbird"
 set $ws9 "9: Media"
 set $ws10 "10: htop"
 
@@ -146,6 +146,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 assign [class="Google-chrome"] $ws1
 assign [class="Gnome-terminal"] $ws2
 assign [class="Org.gnome.Nautilus"] $ws3
+assign [class="Thunderbird"] $ws8
 assign [class="Spotify"] $ws9
 assign [class="vlc"] $ws9
 
