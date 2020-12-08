@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script for configuration of Manjaro Linux Gnome edition with I3 Window Manager
+# Script for configuration of Manjaro Linux Gnome edition with I3 Window Manager for Lenovo Thinkpad T460s
 # Notice - you can't run this script as superuser (sudo)
 # You will be prompted about sudo password when the time comes
 
