@@ -56,12 +56,13 @@ read decision2
 
 case "$decision2" in
   "y")
-      sudo lxappearance;;
+      lxappearance;;
   "Y")
-      sudo lxappearance;;
+      lxappearance;;
    *)
 esac
 
+echo "For changes to take effect restart i3 session (Win+Shift+R)"
 echo "Deleting leftovers"
 cd /home/$user
 sudo rm -R /home/$user/Manjaro-Linux-Personal-Config
