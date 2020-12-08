@@ -9,6 +9,7 @@ DO NOT autocreate config file (press Esc on pop-up after logging in).
 Then run terminal with Alt+Enter, change directory to Manjaro-Linux-Personal-Config, and run i3config.sh.
 
 Changes rundown:
+
 	1. Packages installed:
 
 			yay
