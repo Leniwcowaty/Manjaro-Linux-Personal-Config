@@ -1,9 +1,13 @@
 #!/bin/bash
-# i3 configuration script for Lenovo Thinkpad T460s
-# Do not run this script as superuser (sudo)
+# Script for configuration of Manjaro Linux Gnome edition with I3 Window Manager for Lenovo Thinkpad T460s
+# Notice - you can't run this script as superuser (sudo)
+# You will be prompted about sudo password when the time comes
 
-user="orlow" # your user name
-pictures="Obrazy" # if you are using different name for /home/Pictures
+echo "Input your user name"
+read user
+
+echo "Input your \"Pictures\" directory name"
+read pictures
 
 echo "Copying configuration files and wallpapers"
 
