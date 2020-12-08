@@ -49,6 +49,7 @@ case "$decision" in
       echo "It's best to reboot your computer, or at least log out and back in (Win + Shift + E)"
 esac
 
+echo "bindsym Print exec flameshot full -p \"/home/$user/$pictures\"" >> /home/$user/.config/i3/config
 echo "exec_always feh --no-startup-id --bg-scale \"/home/$user/$pictures/wallpaper.png\"" >> /home/$user/.config/i3/config
 echo "bindsym \$mod+Shift+x exec i3lock --image \"/home/$user/$pictures/lock_screen.png\"" >> /home/$user/.config/i3/config
 
