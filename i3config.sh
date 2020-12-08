@@ -19,10 +19,17 @@ echo "Do you want to see most important custom shortcuts? [Y/N]"
 
 read decision
 
-if [ $decision=="y" || $decision=="Y" ]
-then
-echo "Win + Shift + H - open I3 user guide"
-echo "Win + Shift + X - lock your screen"
-echo "Win + Shift + Delete - shutdown now"
-echo "Win + Space - rofi (app manager)"
-fi
+case "$decision" in
+  "y")
+      echo "Win + Shift + H - open I3 user guide"
+      echo "Win + Shift + X - lock your screen"
+      echo "Win + Shift + Delete - shutdown now"
+      echo "Win + Space - rofi (app manager)";;
+  "Y")
+      echo "Win + Shift + H - open I3 user guide"
+      echo "Win + Shift + X - lock your screen"
+      echo "Win + Shift + Delete - shutdown now"
+      echo "Win + Space - rofi (app manager)";;
+   *)
+      echo "Enjoy your i3!"
+esac
