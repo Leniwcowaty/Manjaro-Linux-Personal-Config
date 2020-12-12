@@ -28,7 +28,7 @@ echo "Updating your system and packages"
 
 yay
 
-echo "Installing I3 and necessary applications"
+echo "Installing necessary applications"
 
 yay -S vim google-chrome vlc spotify mc tree htop neofetch tmux thunderbird
 
