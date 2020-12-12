@@ -32,9 +32,6 @@ echo "Installing necessary applications"
 
 yay -S vim google-chrome vlc spotify mc tree htop neofetch tmux thunderbird
 
-echo "Input your \"Pictures\" directory name"
-read pictures
-
 echo "Copying configuration files and wallpapers"
 
 cp ./i3config/lock_screen.png /home/$user/$pictures/lock_screen.png
