@@ -30,7 +30,7 @@ yay
 
 echo "Installing necessary applications"
 
-yay -S vim google-chrome vlc spotify mc tree htop neofetch tmux thunderbird
+yay -S vim google-chrome vlc spotify mc tree htop neofetch tmux thunderbird grub-customizer
 
 echo "Copying configuration files and wallpapers"
 
