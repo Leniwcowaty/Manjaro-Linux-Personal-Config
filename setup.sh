@@ -30,7 +30,7 @@ yay
 
 echo "Installing necessary applications"
 
-yay -S vim google-chrome vlc spotify mc tree htop neofetch tmux thunderbird grub-customizer
+yay -S vim google-chrome vlc spotify mc tree htop neofetch tmux thunderbird gwe lutris steam wine winetricks wine-mono wine_gecko discord 
 
 echo "Copying configuration files and wallpapers"
 
@@ -39,10 +39,23 @@ cp ./i3config/lock_screen.png /home/$user/$pictures/lock_screen.png
 unzip themes.zip
 sudo cp -r ./themes/FossaCursors /usr/share/icons
 sudo cp -r ./themes/Simply-White-Circles /usr/share/icons
+sudo cp -r ./themes/Simply-Red-Circles /usr/share/icons
 sudo cp -r ./themes/Simply_Circles_Dark_Envolved /usr/share/themes
 
-echo "Done, reboot now, log into I3 window manager and run i3config.sh"
-echo "After logging into I3 DO NOT autocreate config file (press Esc on pop-up window)"
+echo "Do you want to install oh-my-zsh?"
+
+read decision
+case "decision" in
+  "y")  yay -S zsh zsh-completions
+        curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh; zsh
+        mkdir ~/GITS
+        cd ~/GITS
+        git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+        git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+        git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install
+        git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k;;
+  *)
+esac
 
 echo "Deleting leftovers"
 cd /home/$user
